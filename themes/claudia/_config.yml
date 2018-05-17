@@ -1,0 +1,52 @@
+# Header
+menu:
+  Home: /
+  My Works: /works
+  About: /about
+  #Tags: /tags
+
+rss: /atom.xml
+
+# User Info
+user_name: Ung
+user_avatar: https://cdn2.iconfinder.com/data/icons/rcons-user/32/male-shadow-circle-512.png
+user_location: Earth
+user_description: "Android Coder"
+user_contact: 910665383@qq.com
+user_introduction: "An android coder with three years"
+
+github_username: ung8023
+twitter_username: 
+weibo_username: 
+zhihu_username: 
+facebook_username:
+linkedin_username:
+
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# display widgets at the bottom of index pages (pagination == 2)
+#index_widgets:
+# - category
+# - tagcloud
+# - archive
+
+# widget behavior
+#archive_type: 'monthly'
+#show_count: false
+
+# 评论系统
+# 不要用别人的 uid, 自己去注册一个吧
+use_livere: true
+livere_uid: MTAyMC8zNjU0NS8xMzA4MA==
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.png
+#twitter:
+#google_plus:
+#fb_admins:
+#fb_app_id:
+
+
