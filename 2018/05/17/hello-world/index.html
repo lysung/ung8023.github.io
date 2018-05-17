@@ -327,7 +327,7 @@
 
     
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#使用步骤"><span class="post-toc-number">1.</span> <span class="post-toc-text">使用步骤</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#基本需求"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">基本需求</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#安装hexo"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">安装hexo</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Create-a-new-post"><span class="post-toc-number">2.</span> <span class="post-toc-text">Create a new post</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Run-server"><span class="post-toc-number">3.</span> <span class="post-toc-text">Run server</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Generate-static-files"><span class="post-toc-number">4.</span> <span class="post-toc-text">Generate static files</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Deploy-to-remote-sites"><span class="post-toc-number">5.</span> <span class="post-toc-text">Deploy to remote sites</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#使用步骤"><span class="post-toc-number">1.</span> <span class="post-toc-text">使用步骤</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#基本需求"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">基本需求</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#安装hexo"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">安装hexo</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#使用npm安装-保证你已经安装了Node-js-："><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">使用npm安装(保证你已经安装了Node.js)：</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#安装插件"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">安装插件</span></a></li></ol></li></ol></li></ol>
         <!--
         <li class="mdl-menu__item">
             Some Action
@@ -488,25 +488,17 @@
 </ol>
 <p>完成以上步骤，其实就可以了，如果你会写网站的话，基本完成，但是有时候很多时候，你需要安装一写方便操作的东东比如(hexo)</p>
 <h4 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h4><p>这里的安装<code>hexo</code>，并不是把<code>hexo</code>装在<code>github</code>上，而是装在本机上，这样可以方便编辑，通过<code>hexo</code>，会生成实际网页需要的数据，这些数据才是放置到<code>github</code>上，实际访问也是这些文件</p>
-<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>
+<h5 id="使用npm安装-保证你已经安装了Node-js-："><a href="#使用npm安装-保证你已经安装了Node-js-：" class="headerlink" title="使用npm安装(保证你已经安装了Node.js)："></a>使用npm安装(保证你已经安装了Node.js)：</h5><pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">npm</span> <span class="token function">install</span> hexo-cli -g
 </code></pre>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token keyword">static</span> <span class="token keyword">void</span> main <span class="token punctuation">{</span>
-    String a <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+<h5 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h5><ol>
+<li><p>安装<code>prism-plugin</code>(代码高亮插件)</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> i -S hexo-prism-plugin
 </code></pre>
-<pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"a"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+</li>
+<li><p>下载主题</p>
+<p> <a href="https://hexo.io/themes/" target="_blank" rel="noopener">主题下载</a></p>
+</li>
+</ol>
 
     
 
